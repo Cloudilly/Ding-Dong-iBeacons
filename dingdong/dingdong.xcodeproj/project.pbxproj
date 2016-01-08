@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40065D291BFD58DF00B93387 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 40065D281BFD58DF00B93387 /* Database.m */; };
+		40065D2C1BFD591A00B93387 /* dingdong.v1.0.0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40065D2A1BFD591A00B93387 /* dingdong.v1.0.0.xcdatamodeld */; };
+		40065D3D1BFD5CF800B93387 /* Profile+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 40065D3A1BFD5CF800B93387 /* Profile+CoreDataProperties.m */; };
+		40065D3E1BFD5CF800B93387 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 40065D3C1BFD5CF800B93387 /* Profile.m */; };
+		401E28AE1BFECA0000C1CD48 /* Dingdong+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 401E28AB1BFECA0000C1CD48 /* Dingdong+CoreDataProperties.m */; };
+		401E28AF1BFECA0000C1CD48 /* Dingdong.m in Sources */ = {isa = PBXBuildFile; fileRef = 401E28AD1BFECA0000C1CD48 /* Dingdong.m */; };
+		401E28B21BFEF2E200C1CD48 /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 401E28B11BFEF2E200C1CD48 /* ButtonCell.m */; };
+		4090C3741C00778C00D53F57 /* BeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4090C3731C00778C00D53F57 /* BeaconViewController.m */; };
+		4094C4761C0028ED0049FFD0 /* Cloudilly.m in Sources */ = {isa = PBXBuildFile; fileRef = 4094C4711C0028ED0049FFD0 /* Cloudilly.m */; };
+		4094C4771C0028ED0049FFD0 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4094C4731C0028ED0049FFD0 /* GCDAsyncSocket.m */; };
+		4094C4781C0028ED0049FFD0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4094C4751C0028ED0049FFD0 /* Reachability.m */; };
+		409DD1061C016CCA008617FD /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 409DD1051C016CCA008617FD /* MessageViewController.m */; };
+		409DD10B1C016F22008617FD /* Message+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 409DD1081C016F22008617FD /* Message+CoreDataProperties.m */; };
+		409DD10C1C016F22008617FD /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 409DD10A1C016F22008617FD /* Message.m */; };
+		40E786CE1BFB521900D64824 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E786CD1BFB521900D64824 /* SignupViewController.m */; };
+		40E786D11BFB584E00D64824 /* TextfieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E786D01BFB584E00D64824 /* TextfieldCell.m */; };
+		40E786D41BFB5AF700D64824 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E786D31BFB5AF700D64824 /* LoginViewController.m */; };
+		40E786D71BFB754300D64824 /* PairViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E786D61BFB754300D64824 /* PairViewController.m */; };
+		40FCA8C01BF9C2FE00059BA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FCA8BF1BF9C2FE00059BA7 /* main.m */; };
+		40FCA8C31BF9C2FE00059BA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FCA8C21BF9C2FE00059BA7 /* AppDelegate.m */; };
+		40FCA8CB1BF9C2FE00059BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40FCA8CA1BF9C2FE00059BA7 /* Assets.xcassets */; };
+		40FCA8D61BF9C45900059BA7 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FCA8D51BF9C45900059BA7 /* EstimoteSDK.framework */; };
+		40FCA8D91BF9D87300059BA7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FCA8D81BF9D87300059BA7 /* MainViewController.m */; };
+		40FCA8DC1BF9DD6B00059BA7 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FCA8DB1BF9DD6B00059BA7 /* SettingsViewController.m */; };
+		40FCA8E01BF9E5A600059BA7 /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FCA8DF1BF9E5A600059BA7 /* TitleCell.m */; };
+		40FCA8E31BF9EC1600059BA7 /* NormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FCA8E21BF9EC1600059BA7 /* NormalCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40065D271BFD58DF00B93387 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		40065D281BFD58DF00B93387 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		40065D2B1BFD591A00B93387 /* dingdong.v1.0.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dingdong.v1.0.0.xcdatamodel; sourceTree = "<group>"; };
+		40065D391BFD5CF800B93387 /* Profile+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Profile+CoreDataProperties.h"; sourceTree = "<group>"; };
+		40065D3A1BFD5CF800B93387 /* Profile+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Profile+CoreDataProperties.m"; sourceTree = "<group>"; };
+		40065D3B1BFD5CF800B93387 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		40065D3C1BFD5CF800B93387 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		401E28AA1BFECA0000C1CD48 /* Dingdong+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Dingdong+CoreDataProperties.h"; sourceTree = "<group>"; };
+		401E28AB1BFECA0000C1CD48 /* Dingdong+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Dingdong+CoreDataProperties.m"; sourceTree = "<group>"; };
+		401E28AC1BFECA0000C1CD48 /* Dingdong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dingdong.h; sourceTree = "<group>"; };
+		401E28AD1BFECA0000C1CD48 /* Dingdong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dingdong.m; sourceTree = "<group>"; };
+		401E28B01BFEF2E200C1CD48 /* ButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonCell.h; sourceTree = "<group>"; };
+		401E28B11BFEF2E200C1CD48 /* ButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCell.m; sourceTree = "<group>"; };
+		4090C3721C00778C00D53F57 /* BeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconViewController.h; sourceTree = "<group>"; };
+		4090C3731C00778C00D53F57 /* BeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconViewController.m; sourceTree = "<group>"; };
+		4094C4701C0028ED0049FFD0 /* Cloudilly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cloudilly.h; sourceTree = "<group>"; };
+		4094C4711C0028ED0049FFD0 /* Cloudilly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cloudilly.m; sourceTree = "<group>"; };
+		4094C4721C0028ED0049FFD0 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		4094C4731C0028ED0049FFD0 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		4094C4741C0028ED0049FFD0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		4094C4751C0028ED0049FFD0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		409DD1041C016CCA008617FD /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		409DD1051C016CCA008617FD /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		409DD1071C016F22008617FD /* Message+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Message+CoreDataProperties.h"; sourceTree = "<group>"; };
+		409DD1081C016F22008617FD /* Message+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Message+CoreDataProperties.m"; sourceTree = "<group>"; };
+		409DD1091C016F22008617FD /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		409DD10A1C016F22008617FD /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		40E786CC1BFB521900D64824 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		40E786CD1BFB521900D64824 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		40E786CF1BFB584E00D64824 /* TextfieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextfieldCell.h; sourceTree = "<group>"; };
+		40E786D01BFB584E00D64824 /* TextfieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextfieldCell.m; sourceTree = "<group>"; };
+		40E786D21BFB5AF700D64824 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		40E786D31BFB5AF700D64824 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		40E786D51BFB754300D64824 /* PairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairViewController.h; sourceTree = "<group>"; };
+		40E786D61BFB754300D64824 /* PairViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairViewController.m; sourceTree = "<group>"; };
+		40FCA8BB1BF9C2FE00059BA7 /* dingdong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dingdong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40FCA8BF1BF9C2FE00059BA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40FCA8C11BF9C2FE00059BA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40FCA8C21BF9C2FE00059BA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40FCA8CA1BF9C2FE00059BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40FCA8CF1BF9C2FE00059BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40FCA8D51BF9C45900059BA7 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
+		40FCA8D71BF9D87300059BA7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		40FCA8D81BF9D87300059BA7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		40FCA8DA1BF9DD6B00059BA7 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		40FCA8DB1BF9DD6B00059BA7 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		40FCA8DE1BF9E5A600059BA7 /* TitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
+		40FCA8DF1BF9E5A600059BA7 /* TitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
+		40FCA8E11BF9EC1600059BA7 /* NormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalCell.h; sourceTree = "<group>"; };
+		40FCA8E21BF9EC1600059BA7 /* NormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40FCA8B81BF9C2FE00059BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40FCA8D61BF9C45900059BA7 /* EstimoteSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40065D261BFD58C500B93387 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				40065D2A1BFD591A00B93387 /* dingdong.v1.0.0.xcdatamodeld */,
+				40065D271BFD58DF00B93387 /* Database.h */,
+				40065D281BFD58DF00B93387 /* Database.m */,
+				40065D391BFD5CF800B93387 /* Profile+CoreDataProperties.h */,
+				40065D3A1BFD5CF800B93387 /* Profile+CoreDataProperties.m */,
+				40065D3B1BFD5CF800B93387 /* Profile.h */,
+				40065D3C1BFD5CF800B93387 /* Profile.m */,
+				401E28AA1BFECA0000C1CD48 /* Dingdong+CoreDataProperties.h */,
+				401E28AB1BFECA0000C1CD48 /* Dingdong+CoreDataProperties.m */,
+				401E28AC1BFECA0000C1CD48 /* Dingdong.h */,
+				401E28AD1BFECA0000C1CD48 /* Dingdong.m */,
+				409DD1071C016F22008617FD /* Message+CoreDataProperties.h */,
+				409DD1081C016F22008617FD /* Message+CoreDataProperties.m */,
+				409DD1091C016F22008617FD /* Message.h */,
+				409DD10A1C016F22008617FD /* Message.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		4094C46F1C0028D30049FFD0 /* Cloudilly */ = {
+			isa = PBXGroup;
+			children = (
+				4094C4701C0028ED0049FFD0 /* Cloudilly.h */,
+				4094C4711C0028ED0049FFD0 /* Cloudilly.m */,
+				4094C4721C0028ED0049FFD0 /* GCDAsyncSocket.h */,
+				4094C4731C0028ED0049FFD0 /* GCDAsyncSocket.m */,
+				4094C4741C0028ED0049FFD0 /* Reachability.h */,
+				4094C4751C0028ED0049FFD0 /* Reachability.m */,
+			);
+			name = Cloudilly;
+			sourceTree = "<group>";
+		};
+		40FCA8B21BF9C2FE00059BA7 = {
+			isa = PBXGroup;
+			children = (
+				40FCA8BD1BF9C2FE00059BA7 /* dingdong */,
+				40FCA8BC1BF9C2FE00059BA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40FCA8BC1BF9C2FE00059BA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40FCA8BB1BF9C2FE00059BA7 /* dingdong.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40FCA8BD1BF9C2FE00059BA7 /* dingdong */ = {
+			isa = PBXGroup;
+			children = (
+				40FCA8C11BF9C2FE00059BA7 /* AppDelegate.h */,
+				40FCA8C21BF9C2FE00059BA7 /* AppDelegate.m */,
+				40FCA8D71BF9D87300059BA7 /* MainViewController.h */,
+				40FCA8D81BF9D87300059BA7 /* MainViewController.m */,
+				40FCA8DA1BF9DD6B00059BA7 /* SettingsViewController.h */,
+				40FCA8DB1BF9DD6B00059BA7 /* SettingsViewController.m */,
+				40E786D21BFB5AF700D64824 /* LoginViewController.h */,
+				40E786D31BFB5AF700D64824 /* LoginViewController.m */,
+				40E786CC1BFB521900D64824 /* SignupViewController.h */,
+				40E786CD1BFB521900D64824 /* SignupViewController.m */,
+				40E786D51BFB754300D64824 /* PairViewController.h */,
+				40E786D61BFB754300D64824 /* PairViewController.m */,
+				4090C3721C00778C00D53F57 /* BeaconViewController.h */,
+				4090C3731C00778C00D53F57 /* BeaconViewController.m */,
+				409DD1041C016CCA008617FD /* MessageViewController.h */,
+				409DD1051C016CCA008617FD /* MessageViewController.m */,
+				40FCA8CA1BF9C2FE00059BA7 /* Assets.xcassets */,
+				40FCA8CF1BF9C2FE00059BA7 /* Info.plist */,
+				4094C46F1C0028D30049FFD0 /* Cloudilly */,
+				40065D261BFD58C500B93387 /* Database */,
+				40FCA8DD1BF9E58600059BA7 /* CustomCells */,
+				40FCA8D51BF9C45900059BA7 /* EstimoteSDK.framework */,
+				40FCA8BE1BF9C2FE00059BA7 /* Supporting Files */,
+			);
+			path = dingdong;
+			sourceTree = "<group>";
+		};
+		40FCA8BE1BF9C2FE00059BA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40FCA8BF1BF9C2FE00059BA7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40FCA8DD1BF9E58600059BA7 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				40FCA8DE1BF9E5A600059BA7 /* TitleCell.h */,
+				40FCA8DF1BF9E5A600059BA7 /* TitleCell.m */,
+				40FCA8E11BF9EC1600059BA7 /* NormalCell.h */,
+				40FCA8E21BF9EC1600059BA7 /* NormalCell.m */,
+				40E786CF1BFB584E00D64824 /* TextfieldCell.h */,
+				40E786D01BFB584E00D64824 /* TextfieldCell.m */,
+				401E28B01BFEF2E200C1CD48 /* ButtonCell.h */,
+				401E28B11BFEF2E200C1CD48 /* ButtonCell.m */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40FCA8BA1BF9C2FE00059BA7 /* dingdong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40FCA8D21BF9C2FE00059BA7 /* Build configuration list for PBXNativeTarget "dingdong" */;
+			buildPhases = (
+				40FCA8B71BF9C2FE00059BA7 /* Sources */,
+				40FCA8B81BF9C2FE00059BA7 /* Frameworks */,
+				40FCA8B91BF9C2FE00059BA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dingdong;
+			productName = dingdong;
+			productReference = 40FCA8BB1BF9C2FE00059BA7 /* dingdong.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40FCA8B31BF9C2FE00059BA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Cloudilly Private Limited";
+				TargetAttributes = {
+					40FCA8BA1BF9C2FE00059BA7 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 40FCA8B61BF9C2FE00059BA7 /* Build configuration list for PBXProject "dingdong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40FCA8B21BF9C2FE00059BA7;
+			productRefGroup = 40FCA8BC1BF9C2FE00059BA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40FCA8BA1BF9C2FE00059BA7 /* dingdong */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40FCA8B91BF9C2FE00059BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40FCA8CB1BF9C2FE00059BA7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40FCA8B71BF9C2FE00059BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40FCA8E31BF9EC1600059BA7 /* NormalCell.m in Sources */,
+				409DD10C1C016F22008617FD /* Message.m in Sources */,
+				40FCA8C31BF9C2FE00059BA7 /* AppDelegate.m in Sources */,
+				40FCA8D91BF9D87300059BA7 /* MainViewController.m in Sources */,
+				40E786D11BFB584E00D64824 /* TextfieldCell.m in Sources */,
+				40FCA8E01BF9E5A600059BA7 /* TitleCell.m in Sources */,
+				4090C3741C00778C00D53F57 /* BeaconViewController.m in Sources */,
+				401E28AE1BFECA0000C1CD48 /* Dingdong+CoreDataProperties.m in Sources */,
+				40065D3E1BFD5CF800B93387 /* Profile.m in Sources */,
+				4094C4761C0028ED0049FFD0 /* Cloudilly.m in Sources */,
+				40E786D41BFB5AF700D64824 /* LoginViewController.m in Sources */,
+				409DD10B1C016F22008617FD /* Message+CoreDataProperties.m in Sources */,
+				40FCA8C01BF9C2FE00059BA7 /* main.m in Sources */,
+				40E786CE1BFB521900D64824 /* SignupViewController.m in Sources */,
+				409DD1061C016CCA008617FD /* MessageViewController.m in Sources */,
+				40E786D71BFB754300D64824 /* PairViewController.m in Sources */,
+				40065D291BFD58DF00B93387 /* Database.m in Sources */,
+				40FCA8DC1BF9DD6B00059BA7 /* SettingsViewController.m in Sources */,
+				4094C4781C0028ED0049FFD0 /* Reachability.m in Sources */,
+				40065D3D1BFD5CF800B93387 /* Profile+CoreDataProperties.m in Sources */,
+				40065D2C1BFD591A00B93387 /* dingdong.v1.0.0.xcdatamodeld in Sources */,
+				401E28AF1BFECA0000C1CD48 /* Dingdong.m in Sources */,
+				4094C4771C0028ED0049FFD0 /* GCDAsyncSocket.m in Sources */,
+				401E28B21BFEF2E200C1CD48 /* ButtonCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		40FCA8D01BF9C2FE00059BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40FCA8D11BF9C2FE00059BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40FCA8D31BF9C2FE00059BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhongcai Ng (5R29VJ3RN7)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dingdong",
+				);
+				INFOPLIST_FILE = dingdong/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudilly.dingdong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		40FCA8D41BF9C2FE00059BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Zhongcai Ng (N9UZD3CXZZ)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dingdong",
+				);
+				INFOPLIST_FILE = dingdong/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudilly.dingdong;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40FCA8B61BF9C2FE00059BA7 /* Build configuration list for PBXProject "dingdong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40FCA8D01BF9C2FE00059BA7 /* Debug */,
+				40FCA8D11BF9C2FE00059BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40FCA8D21BF9C2FE00059BA7 /* Build configuration list for PBXNativeTarget "dingdong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40FCA8D31BF9C2FE00059BA7 /* Debug */,
+				40FCA8D41BF9C2FE00059BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		40065D2A1BFD591A00B93387 /* dingdong.v1.0.0.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				40065D2B1BFD591A00B93387 /* dingdong.v1.0.0.xcdatamodel */,
+			);
+			currentVersion = 40065D2B1BFD591A00B93387 /* dingdong.v1.0.0.xcdatamodel */;
+			path = dingdong.v1.0.0.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 40FCA8B31BF9C2FE00059BA7 /* Project object */;
+}
