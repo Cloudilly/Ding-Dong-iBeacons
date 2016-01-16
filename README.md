@@ -3,7 +3,7 @@ Repository contains sample codes to build a digital doorbell with a Estimote iBe
 
 ![DingDong](https://github.com/Cloudilly/Images/blob/master/ios_dingdong_secret.png) 
 
-Code is split into 2 sections: 1) the [iOS ObjC](/ObjC) section containing the majority of the code, and 2) the [NodeJS Hook](/Hook) section for initializing the secret token.
+Code is split into 2 sections: 1) the [iOS ObjC](/ObjC) section containing the majority of the logic, and 2) the [NodeJS Hook](/Hook) section for initializing the secret token.
 
 ![DingDong](https://github.com/Cloudilly/Images/blob/master/ios_dingdong.png) 
 
