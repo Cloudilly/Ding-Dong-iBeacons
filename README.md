@@ -24,11 +24,8 @@ Deploy the below websocket dependency.
 npm install --save ws
 ```
 
-#####Update Access and Secret Token on NodeJS codes
+#####Update Secret Token and Hook Access on NodeJS codes
 Each iBeacon comes with a unique pair of major and minor number that can be retrieved via the [Estimote Cloud](https://cloud.estimote.com). We will use the pair of major and minor number as our iBeacon's _"identifier"_. Randomly pick a string as its _"secret token"_. This _"secret token"_ will subsequently be used to verify ownership of the iBeacon. [Update the _"identifier"_ and _"secret token"_](../../blob/master/Hook/app.js#L14-L15). [Update also your _"App Name"_ and _"Hook Access"_](../../blob/master/Hook/app.js#L3-L4). Once done, upload your NodeJS files and run the application. Repeat steps if require more sets of iBeacons.
-
-#####Create secret token for iBeacon
-Each iBeacon comes with a unique pair of major and minor number that can be modified via the [Estimote Cloud](https://cloud.estimote.com). We will use this as our unique identifier. Each DingDong iBeacon will be tagged with a 
 
 #####Update Access on ObjC codes
 [Insert your _"App Name"_ and _"Access"_](../../blob/master/ObjC/dingdong/AppDelegate.m#L28-L29). Once done, build and run the application. Open up developer console to verify connection to Cloudilly. Try sending messages and push notifications across multiple devices.
