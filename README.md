@@ -25,7 +25,7 @@ npm install --save ws
 ```
 
 #####Update Access on NodeJS codes
-[Insert your _"App Name"_ and _"Access"_](../../blob/master/Hook/app.js#L1-L2). Once done, upload your NodeJS files and run the application. Verify connection to Cloudilly. If you have setup the anonymous chat app for other platforms, you should also test if you can send messages across platforms, ie from Android to Web / iOS and vice versa.
+[Insert your _"App Name"_ and _"Access"_](../../blob/master/Hook/app.js#L3-L4). Once done, upload your NodeJS files and run the application. Verify connection to Cloudilly. If you have setup the anonymous chat app for other platforms, you should also test if you can send messages across platforms, ie from Android to Web / iOS and vice versa.
 
 #####Create secret token for iBeacon
 Each iBeacon comes with a unique pair of major and minor number that can be modified via the [Estimote Cloud](https://cloud.estimote.com). We will use this as our unique identifier. Each DingDong iBeacon will be tagged with a 
