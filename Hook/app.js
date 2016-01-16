@@ -12,8 +12,8 @@ cloudilly.socketConnected(function(err, res) {
 	console.log(res);
 
 	var beaconID= "<INSERT YOUR OWN UNIQUE BEACON ID, FORMAT AS dingdong:major:minor>";
-	var randomString= "<INSERT YOUR OWN RANDOM STRING>";
-	cloudilly.create(beaconID, randomString, function(err, res) {
+	var secretToken= "<INSERT YOUR OWN SECRET TOKEN>";
+	cloudilly.create(beaconID, secretToken, function(err, res) {
 		if(err) { console.log("ERROR: Oops. Something wrong"); return; }
 		console.log("@@@@@@ CREATE");
 		console.log(res);
