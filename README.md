@@ -10,8 +10,21 @@ If you have not already done so, first create an account on [Cloudilly](https://
 
 ![iOS Console](https://github.com/Cloudilly/Images/blob/master/ios_dingdong_console.png)
 
-#####Create secret token for iBeacon
-Each iBeacon comes with a major and minor number that can be modified via the [Estimote Cloud](https://cloud.estimote.com)
+Under Hook SDK, you will find the parameters required for your Cloudilly application. _"Access"_ refers to the access keys to be embedded in your server side Hook codes.
 
-#####Update Access
+![Hook Console](https://github.com/cloudilly/images/blob/master/hook_console.png)
+
+#####Instantiate NodeJS server
+Deploy the below websocket dependency.
+```
+npm install --save ws
+```
+
+#####Update Access on NodeJS codes
+[Insert your _"App Name"_ and _"Access"_](../../blob/master/app.js#L1-L2). Once done, upload your NodeJS files and run the application. Verify connection to Cloudilly. If you have setup the anonymous chat app for other platforms, you should also test if you can send messages across platforms, ie from Android to Web / iOS and vice versa.
+
+#####Create secret token for iBeacon
+Each iBeacon comes with a unique pair of major and minor number that can be modified via the [Estimote Cloud](https://cloud.estimote.com). We will use this as our unique identifier. Each DingDong iBeacon will be tagged with a 
+
+#####Update Access on ObjC codes
 [Insert your _"App Name"_ and _"Access"_](../../blob/master/ObjC/dingdong/AppDelegate.m#L28-L29). Once done, build and run the application. Open up developer console to verify connection to Cloudilly. Try sending messages and push notifications across multiple devices.
