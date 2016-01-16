@@ -11,4 +11,4 @@ If you have not already done so, first create an account on [Cloudilly](https://
 ![iOS Console](https://github.com/Cloudilly/Images/blob/master/ios_dingdong_console.png)
 
 #####Update Access
-[Insert your _"App Name"_ and _"Access"_](../../blob/master/ObjC/dingdong/AppDelegate.m#L38-L39). Once done, build and run the application. Open up developer console to verify connection to Cloudilly. Try sending messages and push notifications across multiple devices.
+[Insert your _"App Name"_ and _"Access"_](../../blob/master/ObjC/dingdong/AppDelegate.m#L28-L29). Once done, build and run the application. Open up developer console to verify connection to Cloudilly. Try sending messages and push notifications across multiple devices.
