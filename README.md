@@ -3,18 +3,18 @@ Repository contains sample codes to build a digital doorbell with a Estimote iBe
 
 ![DingDong](https://github.com/Cloudilly/Images/blob/master/ios_dingdong_secret.png) 
 
-Code is split into 2 sections: 1) the [iOS ObjC](/ObjC) section containing the majority of the logic, and 2) the [NodeJS Hook](/Hook) section for initializing the secret token.
+Code is split into 2 portions: 1) the [iOS ObjC](/ObjC) portion containing the majority of the logic, and 2) the [NodeJS Hook](/Hook) portion for initializing the secret token.
 
 ![DingDong](https://github.com/Cloudilly/Images/blob/master/ios_dingdong.png) 
 
 ---
 
 #####Create app
-If you have not already done so, first create an account on [Cloudilly](https://cloudilly.com). Next create an app with a unique app identifier and a cool name. Once done, you should arrive at the app page with all the access keys for the different platforms. Under iOS SDK, you will find the parameters required for the ObjC section of your application. _"Access"_ refers to the access keys to be embedded in the ObjC codes. _"Bundle ID"_ can be found inside xCode project under _Targets_ >> _General_ >> _Identity_. For this project we will require push notifications. Generate a non-password protected .P12 cert file and upload to the appropriate environment.
+If you have not already done so, first create an account on [Cloudilly](https://cloudilly.com). Next create an app with a unique app identifier and a cool name. Once done, you should arrive at the app page with all the access keys for the different platforms. Under iOS SDK, you will find the parameters required for the ObjC portion of your application. _"Access"_ refers to the access keys to be embedded in the ObjC codes. _"Bundle ID"_ can be found inside xCode project under _Targets_ >> _General_ >> _Identity_. For this project we will require push notifications. Generate a non-password protected .P12 cert file and upload to the appropriate environment.
 
 ![iOS Console](https://github.com/Cloudilly/Images/blob/master/ios_dingdong_console.png)
 
-Under Hook SDK, you will find the parameters required for the NodeJS section of your application. _"Access"_ refers to the access keys to be embedded in your server side Hook codes.
+Under Hook SDK, you will find the parameters required for the NodeJS portion of your application. _"Access"_ refers to the access keys to be embedded in your server side Hook codes.
 
 ![Hook Console](https://github.com/cloudilly/images/blob/master/hook_console.png)
 
