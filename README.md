@@ -1,5 +1,5 @@
 #DingDong iBeacons
-Repository contains sample codes to build a digital doorbell with a Estimote iBeacon. Cloudilly is used to build its chat + push notification system. When near an iBeacon, a visitor can press on a digital button to trigger a push notification out to the iBeacon's associated owner. If the owner choose to answer a ringing doorbell, both visitor and owner can communicate via a chat room. A secret token is used to verify ownership before associating an iBeacon to a user account.
+Repository contains sample codes to build a digital doorbell with a Estimote iBeacon. Cloudilly is used to build its chat + push notification system. When near an iBeacon, a visitor can press on a digital button to trigger a push notification out to the iBeacon's associated owner. If the owner choose to answer a ringing doorbell, both visitor and owner can communicate via a chat room. A secret token is used to verify ownership before associating the iBeacon to a user account.
 
 ![DingDong](https://github.com/Cloudilly/Images/blob/master/ios_dingdong_secret.png) 
 
