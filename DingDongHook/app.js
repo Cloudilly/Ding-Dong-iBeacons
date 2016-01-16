@@ -1,7 +1,8 @@
 var cloudilly= require("./hook.js");
-var randomstring= require("randomstring");
 
-cloudilly.initialize("com.cloudilly.dingdong", "008db012-d30f-475f-8aef-582fd2b1b923", function() {
+var app= "<GET YOUR APP NAME AT CLOUDILLY.COM>";
+var access= "<GET YOUR ACCESS KEY AT CLOUDILLY.COM>";
+cloudilly.initialize(app, access, function() {
 	cloudilly.connect();
 });
 
@@ -9,8 +10,10 @@ cloudilly.socketConnected(function(err, res) {
 	if(err) { console.log("ERROR: Oops. Something wrong"); return; }
 	console.log("@@@@@@ CONNECTED");
 	console.log(res);
-	
-	cloudilly.create("dingdong:10508:54650", randomstring.generate(8), function(err, res) {
+
+	var beaconID= "<INSERT YOUR OWN UNIQUE BEACON ID, FORMAT AS dingdong:major:minor>";
+	var randomString= "<INSERT YOUR OWN RANDOM STRING>";
+	cloudilly.create(beaconID, randomString, function(err, res) {
 		if(err) { console.log("ERROR: Oops. Something wrong"); return; }
 		console.log("@@@@@@ CREATE");
 		console.log(res);

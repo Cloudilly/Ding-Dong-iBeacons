@@ -25,7 +25,9 @@
     [[UIApplication sharedApplication] registerForRemoteNotifications];
     
     Profile *profile= [self.database fetchProfile];
-    self.cloudilly= [[Cloudilly alloc] initWithApp:@"com.cloudilly.dingdong" AndAccess:@"f5c08e11-9b94-49df-a6c9-854e40b44150" WithCallback:^(void) {
+    NSString *app= @"<GET YOUR APP NAME AT CLOUDILLY.COM>";
+    NSString *access= @"<GET YOUR ACCESS KEY AT CLOUDILLY.COM>";
+    self.cloudilly= [[Cloudilly alloc] initWithApp:app AndAccess:access WithCallback:^(void) {
         profile.username ? [self.cloudilly connectWithUsername:profile.username Password:profile.password] : [self.cloudilly connect];
     }];
     self.cloudilly.delegate= self;
@@ -33,7 +35,9 @@
     self.beaconManager= [ESTBeaconManager new];
     self.beaconManager.delegate= self;
     [self.beaconManager requestWhenInUseAuthorization];
-    self.beaconRegion= [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:@"D71D2718-A055-1747-5031-9B07D3DA9D12"] identifier:@"DingDong"];
+    NSString *estimoteUUID= @"<GET YOUR UUID AT ESTIMOTE CLOUD>";
+    NSString *estimoteIdentifier= @"<GET YOUR OWN IDENTIFIER AT ESTIMOTE CLOUD>";
+    self.beaconRegion= [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:estimoteUUID] identifier:estimoteIdentifier];
 
     self.window= [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor= [UIColor clearColor];

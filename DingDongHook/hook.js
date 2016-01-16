@@ -7,7 +7,8 @@ module.exports= {
 		this.socket= {};
 		this.tasks= {};
 		this.callbacks= {};
-		this.pings= {};
+		this.ping= {};
+		this.pong= {};
 		this.attempts= 0;
 		this.username= "";
 		this.password= "";
@@ -24,7 +25,7 @@ module.exports= {
 		self.socket.onopen= function() { self.attempts= 0; self.connectNormal.call(self); return; }
 
 		self.socket.onmessage= function(msg) {
-			if(msg.data== "1") { return; }
+			if(msg.data== "1") { self.stopPong.call(self); return; }
 			var obj= JSON.parse(msg.data);
 			
 			switch(obj.type) {
@@ -49,7 +50,7 @@ module.exports= {
 
 		self.socket.onerror= function(err) {
 			self.attempts= self.attempts+ 1;
-			clearTimeout(self.pings);
+			clearTimeout(self.ping);
 			self.callbacks["disconnected"].call(self);
 			if(err.code== 4000 || self.attempts> 100) { self.attempts= 0; return; }
 			setTimeout(function() { self.connect.call(self, self.username, self.password); }, 2000 * self.attempts);
@@ -58,7 +59,7 @@ module.exports= {
 
 		self.socket.onclose= function(err) {
 			self.attempts= self.attempts+ 1;
-			clearTimeout(self.pings);
+			clearTimeout(self.ping);
 			self.callbacks["disconnected"].call(self);
 			if(err.code== 4000 || self.attempts> 100) { self.attempts= 0; return; }
 			setTimeout(function() { self.connect.call(self, self.username, self.password); }, 2000 * self.attempts);
@@ -243,58 +244,6 @@ module.exports= {
 		obj.token= token;
 		self.writeAndTask.call(self, obj, callback);
 	},
-
-// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-// SUPER METHODS
-// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-	_verifyAccount: function(username, accountID, callback) {
-		var self= this;
-		var obj= {};
-		obj.type= "_verifyAccount";
-		obj.username= username;
-		obj.accountID= accountID;
-		self.writeAndTask.call(self, obj, callback);
-	},
-
-	_updateAPNSPlatform: function(app, device, platform, arn, callback) {
-		var self= this;
-		var obj= {};
-		obj.type= "_updateAPNSPlatform";
-		obj.app= app;
-		obj.device= device;
-		obj.platform= platform;
-		obj.arn= arn;
-		self.writeAndTask.call(self, obj, callback);
-	},
-
-	_updateGCMPlatform: function(app, device, arn, serverkey, callback) {
-		var self= this;
-		var obj= {};
-		obj.type= "_updateGCMPlatform";
-		obj.app= app;
-		obj.device= device;
-		obj.arn= arn;
-		obj.serverkey= serverkey;
-		self.writeAndTask.call(self, obj, callback);
-	},
-
-	_updatePlan: function(app, plan, callback) {
-		var self= this;
-		var obj= {};
-		obj.type= "_updatePlan";
-		obj.app= app;
-		obj.plan= plan;
-		self.writeAndTask.call(self, obj, callback);
-	},
-
-	_cleanDevices: function(host, callback) {
-		var self= this;
-		var obj= {};
-		obj.type= "_cleanDevices";
-		obj.host= host;
-		self.writeAndTask.call(self, obj, callback);
-	},
 	
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@
 // HELPER METHODS
@@ -310,23 +259,39 @@ module.exports= {
 	connectFail: function(obj) { var self= this; self.callbacks["connected"].call(self, 1, obj); },
 	taskSuccess: function(obj) {
 		var self= this;
+		if(!self.callbacks[obj.task]) { return; }
 		self.callbacks[obj.task].call(self, null, obj);
 		delete self.callbacks[obj.task];
 		delete self.tasks[obj.task];
 	},
 	taskFail: function(obj) {
 		var self= this;
+		if(!self.callbacks[obj.task]) { return; }
 		self.callbacks[obj.task].call(self, 1, obj);
 		delete self.callbacks[obj.task];
 		delete self.tasks[obj.task];
 	},
-	startPing: function() { var self= this; self.firePing.call(self); self.pings= setInterval(function() { self.firePing.call(self); }, 15000); },
+	startPing: function() { var self= this; self.firePing.call(self); self.ping= setInterval(function() { self.firePing.call(self); }, 15000); },
 	firePing: function() {
 		var self= this; if(!self.socket || self.socket.readyState!= 1) { return; }
-		self.socket.send("1"); var tasks= [];
-		for(var key in self.tasks) { tasks.push([key, self.tasks[key]["timestamp"]]); };
+		self.socket.send("1"); self.startPong.call(self);
+		var tasks= []; for(var key in self.tasks) { tasks.push([key, self.tasks[key]["timestamp"]]); };
 		tasks.sort(function(a, b) { return a[1]< b[1] ? 1 : a[1]> b[1] ? -1 : 0 });
 		var length= tasks.length; while(length--) { var task= self.tasks[tasks[length][0]]; self.socket.send(task.data); }
+	},
+	startPong: function() {
+		var self= this;
+		if(self.pong) { clearTimeout(self.pong); self.pong= null; }
+		self.pong= setTimeout(function() { self.firePong.call(self); }, 5000);
+	},
+	stopPong: function() {
+		var self= this;
+		if(!self.pong) { return; }
+		clearTimeout(self.pong);
+		self.pong= null;
+	},
+	firePong: function() {
+		self.socket.close();
 	},
 	writeAndTask: function(obj, callback) {
 		var self= this; if(!self.socket || self.socket.readyState!= 1) { return; }
