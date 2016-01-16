@@ -3,7 +3,7 @@ Repository contains sample codes required to build a digital doorbell with Estim
 
 ![DingDong](https://github.com/Cloudilly/Images/blob/master/ios_dingdong_secret.png) 
 
-Code is split into 2 sections, namely the [iOS ObjC](/ObjC) section containing the majority of the code, and the [NodeJS Hook](/Hook) section for initializing a secret token that is used to verify ownership of the iBeacon.
+Code is split into 2 sections, namely the [iOS ObjC](/ObjC) section containing the majority of the code, and the [NodeJS Hook](/Hook) section for initializing the secret token.
 
 ![DingDong](https://github.com/Cloudilly/Images/blob/master/ios_dingdong.png) 
 
