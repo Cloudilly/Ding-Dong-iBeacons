@@ -1,5 +1,7 @@
 #DingDong iBeacons for iOS ObjC SDK
-Repository contains sample codes required to build a doorbell with Estimote iBeacons. Cloudilly iOS ObjC SDK is used to build the chat + push notification system. When device is near the iBeacon, user can press on the button to trigger a push notification out to the associated owner. Code is split into 2 sections, namely the [iOS ObjC](/ObjC) and the [NodeJS Hook](/Hook) portion. 
+Repository contains sample codes required to build a doorbell with Estimote iBeacons. Cloudilly iOS ObjC SDK is used to build the chat + push notification system. When device is near the iBeacon, user can press on the button to trigger a push notification out to the associated owner. Code is split into 2 sections, namely the [iOS ObjC](/ObjC) and the [NodeJS Hook](/Hook) portion.
+
+Majority of the code is in the [iOS ObjC](/ObjC) section. [NodeJS Hook](/Hook) library is solely used to initialize the secret token. Secret token is used to verify ownership of the iBeacon.
 
 ![DingDong](https://github.com/Cloudilly/Images/blob/master/ios_dingdong.png) 
 
