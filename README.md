@@ -25,9 +25,7 @@ npm install --save ws
 ```
 
 #####Update Access and Secret Token on NodeJS codes
-Each iBeacon comes with a unique pair of major and minor number that can be retrieved via the [Estimote Cloud](https://cloud.estimote.com). We will use the pair of major and minor number as our iBeacon's _"identifier"_. Randomly pick a string as its _"secret token"_. This _"secret token"_ will subsequently be used to verify ownership of the iBeacon. [Update the _"identifier"_ and _"secret token"_](../../blob/master/Hook/app.js#L14-L15).
-
-[Insert your _"App Name"_ and _"Access"_](../../blob/master/Hook/app.js#L3-L4). Once done, upload your NodeJS files and run the application. Verify connection to Cloudilly. If you have setup the anonymous chat app for other platforms, you should also test if you can send messages across platforms, ie from Android to Web / iOS and vice versa.
+Each iBeacon comes with a unique pair of major and minor number that can be retrieved via the [Estimote Cloud](https://cloud.estimote.com). We will use the pair of major and minor number as our iBeacon's _"identifier"_. Randomly pick a string as its _"secret token"_. This _"secret token"_ will subsequently be used to verify ownership of the iBeacon. [Update the _"identifier"_ and _"secret token"_](../../blob/master/Hook/app.js#L14-L15). [Update also your _"App Name"_ and _"Hook Access"_](../../blob/master/Hook/app.js#L3-L4). Once done, upload your NodeJS files and run the application. Repeat steps if require more sets of iBeacons.
 
 #####Create secret token for iBeacon
 Each iBeacon comes with a unique pair of major and minor number that can be modified via the [Estimote Cloud](https://cloud.estimote.com). We will use this as our unique identifier. Each DingDong iBeacon will be tagged with a 
