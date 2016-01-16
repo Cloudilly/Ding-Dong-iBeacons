@@ -166,7 +166,7 @@
     Profile *profile= [[self appDelegate].database fetchProfile];
     if(!profile.username) { [[self appDelegate] alertTitle:@"ERROR" AndMessage:@"PLEASE LOGIN FIRST"]; return; }
     
-    [[self appDelegate].cloudilly notify:@"DingDong" Group:[NSString stringWithFormat:@"dingdong:%@", dingdong] WithCallback:^(NSDictionary *dict) {
+    [[self appDelegate].cloudilly notify:@"DingDong" Group:[NSString stringWithFormat:@"DINGDONG:%@", dingdong] WithCallback:^(NSDictionary *dict) {
         if([[dict objectForKey:@"status"] isEqual: @"fail"]) { [[self appDelegate] alertTitle:@"ERROR" AndMessage:[NSString stringWithFormat:@"%@", dict]]; return; }
         NSLog(@"@@@@@@ NOTIFY");
         NSLog(@"%@", dict);

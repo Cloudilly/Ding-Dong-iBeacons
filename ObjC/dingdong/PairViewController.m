@@ -121,7 +121,7 @@
         NSString *dingdong= profile.nearby;
         NSString *token= tokenCell.textField.text;
         tokenCell.textField.text= @"";
-        [[self appDelegate].cloudilly linkGroup:[NSString stringWithFormat:@"dingdong:%@", dingdong] WithPassword:token WithCallback:^(NSDictionary *dict) {
+        [[self appDelegate].cloudilly linkGroup:[NSString stringWithFormat:@"DINGDONG:%@", dingdong] WithPassword:token WithCallback:^(NSDictionary *dict) {
             if([[dict objectForKey:@"status"] isEqual: @"fail"]) { [[self appDelegate] alertTitle:@"ERROR" AndMessage:[NSString stringWithFormat:@"%@", dict]]; return; }
             NSLog(@"@@@@@@ LINK");
             NSLog(@"%@", dict);
