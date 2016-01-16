@@ -14,7 +14,7 @@ If you have not already done so, first create an account on [Cloudilly](https://
 
 ![iOS Console](https://github.com/Cloudilly/Images/blob/master/ios_dingdong_console.png)
 
-Under Hook SDK, you will find the parameters required for the NodeJS section of your Cloudilly application. _"Access"_ refers to the access keys to be embedded in your server side Hook codes.
+Under Hook SDK, you will find the parameters required for the NodeJS section of your application. _"Access"_ refers to the access keys to be embedded in your server side Hook codes.
 
 ![Hook Console](https://github.com/cloudilly/images/blob/master/hook_console.png)
 
