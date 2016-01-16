@@ -25,7 +25,7 @@ npm install --save ws
 ```
 
 #####Update Access and Secret Token on NodeJS codes
-Each iBeacon comes with a unique pair of major and minor number that can be retrieved via the [Estimote Cloud](https://cloud.estimote.com). We will use the pair as the iBeacon's identifier. [Update this _"identifier"_ and a random _"secret token"_](../../blob/master/Hook/app.js#L3-L4) that will be used to verify ownership of the iBeacon.
+Each iBeacon comes with a unique pair of major and minor number that can be retrieved via the [Estimote Cloud](https://cloud.estimote.com). We will use the pair major and minor number as our iBeacon's identifier. Assign also a random string as the secret token. This secret token will be used to verify ownership of the iBeacon.  [Update the _"identifier"_ and random _"secret token"_.](../../blob/master/Hook/app.js#L3-L4)
 
 [Insert your _"App Name"_ and _"Access"_](../../blob/master/Hook/app.js#L3-L4). Once done, upload your NodeJS files and run the application. Verify connection to Cloudilly. If you have setup the anonymous chat app for other platforms, you should also test if you can send messages across platforms, ie from Android to Web / iOS and vice versa.
 
