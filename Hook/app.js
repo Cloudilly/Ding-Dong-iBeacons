@@ -11,12 +11,14 @@ cloudilly.socketConnected(function(err, res) {
 	console.log("@@@@@@ CONNECTED");
 	console.log(res);
 
-	var beaconID= "<INSERT YOUR OWN UNIQUE BEACON ID, FORMAT AS 'DINGDONG:MAJOR:MINOR', MAJOR / MINOR FROM ESTIMOTE CLOUD>";
+	var beaconID= "<INSERT IDENTIFIER, FORMAT AS 'DINGDONG:MAJOR:MINOR', MAJOR / MINOR FROM ESTIMOTE CLOUD>";
 	var secretToken= "<INSERT YOUR OWN SECRET TOKEN>";
 	cloudilly.create(beaconID, secretToken, function(err, res) {
 		if(err) { console.log("ERROR: Oops. Something wrong"); return; }
 		console.log("@@@@@@ CREATE");
 		console.log(res);
+		
+		cloudilly.disconnect();
 	});
 });
 
