@@ -1,6 +1,6 @@
 var cloudilly= require("./hook.js");
 
-var app= "GET YOUR APP NAME AT CLOUDILLY.COM>";
+var app= "<GET YOUR APP NAME AT CLOUDILLY.COM>";
 var access= "<GET YOUR ACCESS KEY AT CLOUDILLY.COM>";
 cloudilly.initialize(app, access, function() {
 	cloudilly.connect();
